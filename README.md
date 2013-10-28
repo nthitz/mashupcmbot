@@ -1,4 +1,0 @@
-mashupcmbot
-===========
-
-mashupfm cmbot
