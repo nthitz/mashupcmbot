@@ -22,15 +22,15 @@ var mybot = new cmbot({
     modpm_superusers: true, // Set to false to exclude superusers from modpm
     allow_mobile_djs: true, // Set to false to require users to be whitelisted in order to DJ from a mobile device (mods are exempt)
     lastfm: {
-        enabled: false,
-        username: '',
-        password: '',
-        api_key: '',
-        api_secret: '',
-        session_key: false,
+        enabled: true,
+        username: 'mashupfm',
+        password: 'removed_put_back_in_to_regen_session_key',
+        api_key: BOTCREDENTIALS.lastkey,
+        api_secret: BOTCREDENTIALS.lastsecret,
+        session_key: BOTCREDENTIALS.sessionKey === '' ? false : BOTCREDENTIALS.sessionKey,
         earliest_scrobble: '' // If you want /plays to add that the number of plays shown is from the date of your first scrobble, put it here, and it will append it ("since _____")
     },
-    scrobble: false, // Set to false to not have the bot scrobble tracks to last.fm
+    scrobble: true, // Set to false to not have the bot scrobble tracks to last.fm
     playsMode: 'lastfm', // use either 'lastfm' or 'mysql' or 'sqlite'
     songkick: {
         api_key: '' // Get an API key here: http://www.songkick.com/developer/
@@ -69,7 +69,7 @@ var mybot = new cmbot({
      * will be displayed every 30 minutes - the first one 15 minutes after the bot starts, and the next one 15 
      * minutes later, then the first one in another 15 minutes, etc.
      */
-    message_interval: 15, // Number of minutes between each informational message
+    message_interval: 3600, // Number of minutes between each informational message
 
     // index of which messages should be hidden when it's FFA (free for all) mode (if the queue is disabled, 
     // this setting doesn't do anything - every message will display)
