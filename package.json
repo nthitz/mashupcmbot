@@ -3,5 +3,18 @@
   "description": "mashup fm bot",
   "version": "0.0.1",
   "dependencies" : {
+  	"ttapi": "*",
+    "sprintf": "*",
+    "http-get": "*",
+    "crypto": ">= 0.0.3",
+    "xml2js": ">= 0.1.13",
+    "querystring": ">= 0.1.0",
+    "ntwitter": "*",
+    "jquery": "*",
+    "simple-lastfm": ">= 1.0.3",
+    "dateformat": "*",
+    "path": "*",
+    "jsdom": "*",
+    "mysql": "0.9.*"
   }
 }
