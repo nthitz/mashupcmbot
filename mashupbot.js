@@ -1,5 +1,13 @@
 var cmbot = require('./cmbot/lib/index.js');
-var credentials = require('./credentials.js')
+//var credentials = require('./credentials.js')
+var BOTCREDENTIALS = {
+    auth: process.env.auth,
+    userid: process.env.userid,
+    roomid: process.env.roomid,
+    lastkey: process.env.lastkey,
+    lastsecret: process.env.lastsecret,
+    sessionKey: process.env.sessionKey, 
+}
 var mybot = new cmbot({
     // This will put the settings & dj files in the same directory where this script is
     settings_file: __dirname + '/settings.json', 
