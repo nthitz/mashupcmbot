@@ -3,6 +3,5 @@
   "description": "mashup fm bot",
   "version": "0.0.1",
   "dependencies" : {
-    "cmbot": "~0.9.7"
   }
 }
